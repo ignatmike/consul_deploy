@@ -1,4 +1,7 @@
-Create file xxx.json on each server with consul
+#Create key 
+consul keygen
+
+#Create file xxx.json on each server with consul
 nano /etc/consul.d/clust.json 
 
 {
