@@ -1,1 +1,1 @@
-# consul_cluster
+# Deploy consul_cluster on Ubuntu server
