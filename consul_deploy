@@ -1,4 +1,5 @@
-nano /etc/consul.d/clust.json
+Create file xxx.json on each server with consul
+nano /etc/consul.d/clust.json 
 
 {
   "server": true,
