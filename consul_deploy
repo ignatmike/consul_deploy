@@ -17,3 +17,37 @@ nano /etc/consul.d/clust.json
   "enable_syslog": true,
   "acl_enforce_version_8": false
 }
+
+{
+  "server": true,
+  "node_name": "consul_s2",
+  "datacenter": "dc1",
+  "data_dir": "/var/consul",
+  "bind_addr": "0.0.0.0",
+  "client_addr": "0.0.0.0",
+  "advertise_addr": "172.31.44.108",
+  "bootstrap_expect": 3,
+  "retry_join": ["172.31.34.23", "172.31.44.108", "172.31.42.89"],
+  "encrypt": "you consul keygen", 
+  "ui": true,
+  "log_level": "DEBUG",
+  "enable_syslog": true,
+  "acl_enforce_version_8": false
+}
+
+{
+  "server": true,
+  "node_name": "consul_s3",
+  "datacenter": "dc1",
+  "data_dir": "/var/consul",
+  "bind_addr": "0.0.0.0",
+  "client_addr": "0.0.0.0",
+  "advertise_addr": "172.31.42.89",
+  "bootstrap_expect": 3,
+  "encrypt": "you consul keygen", 
+  "retry_join": ["172.31.34.23", "172.31.44.108", "172.31.42.89"],
+  "ui": true,
+  "log_level": "DEBUG",
+  "enable_syslog": true,
+  "acl_enforce_version_8": false
+}
